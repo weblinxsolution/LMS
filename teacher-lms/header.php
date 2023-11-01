@@ -139,11 +139,11 @@
                             <li><a href="completed-sessions.php">Completed Sessions</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="list-of-" aria-expanded="false">
+                    <!-- <li>
+                        <a href="list-of-payroll.php" aria-expanded="false">
                             <i class="fa fa-dollar-sign menu-icon"></i><span class="nav-text">Payroll Management</span>
                         </a>
-                    </li>
+                    </li> -->
                     <li>
                         <a href="reports-managements.php" aria-expanded="false">
                             <i class="icon-info menu-icon"></i> <span class="nav-text">Report Management</span>

@@ -2,7 +2,49 @@
       <?php include('./header.php'); ?>
       <!--********************************** Footer ***********************************-->
 
+      <style>
+          .rate {
+              float: left;
+              height: 46px;
+              padding: 0 10px;
+          }
 
+          .rate:not(:checked)>input {
+              position: absolute;
+              top: -9999px;
+          }
+
+          .rate:not(:checked)>label {
+              float: right;
+              width: 1em;
+              overflow: hidden;
+              white-space: nowrap;
+              cursor: pointer;
+              font-size: 30px;
+              color: #ccc;
+          }
+
+          .rate:not(:checked)>label:before {
+              content: '★ ';
+          }
+
+          .rate>input:checked~label {
+              color: #ffc700;
+          }
+
+          .rate:not(:checked)>label:hover,
+          .rate:not(:checked)>label:hover~label {
+              color: #deb217;
+          }
+
+          .rate>input:checked+label:hover,
+          .rate>input:checked+label:hover~label,
+          .rate>input:checked~label:hover,
+          .rate>input:checked~label:hover~label,
+          .rate>label:hover~input:checked~label {
+              color: #c59b08;
+          }
+      </style>
       <!--**********************************
             Content body start
         ***********************************-->
@@ -106,124 +148,32 @@
                           </div>
                       </div>
                   </div>
-                  <div class="col-6">
+                  <div class="col-12">
                       <div class="card">
                           <div class="card-body">
                               <div class="table-responsive">
-                                  <h3>Ongoing Courses</h3>
-                                  <div class="table-responsive">
-                                      <table class="table table-striped table-bordered ">
-                                          <thead>
-                                              <tr>
-                                                  <th>#iD</th>
-                                                  <th>Name</th>
-                                                  <th>Course</th>
-                                                  <th>Course Category</th>
-                                                  <th>Subject</th>
-                                                  <th>Status</th>
-                                                  <th>Date</th>
-                                              </tr>
-                                          </thead>
-                                          <tbody>
-                                              <tr>
-                                                  <td>32463</td>
-                                                  <td>Meta Tags</td>
-                                                  <td>Digital Marketing</td>
-                                                  <td>Marketing</td>
-                                                  <td>Facebook</td>
-                                                  <td><span class="badge badge-success text-white">Active</span></td>
-                                                  <td>2011/01/25</td>
-                                              </tr>
-                                              <tr>
-                                                  <td>32463</td>
-                                                  <td>Meta Tags</td>
-                                                  <td>Digital Marketing</td>
-                                                  <td>Marketing</td>
-                                                  <td>Facebook</td>
-                                                  <td><span class="badge badge-success text-white">Active</span></td>
-                                                  <td>2011/01/25</td>
-                                              </tr>
-                                          </tbody>
-                                      </table>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-6">
-                      <div class="card">
-                          <div class="card-body">
-                              <div class="table-responsive">
-                                  <h3>Completed Courses</h3>
+                                  <h3>Registrations Course</h3>
                                   <table class="table table-striped table-bordered">
                                       <thead>
                                           <tr>
                                               <th>#iD</th>
-                                              <th>Name</th>
-                                              <th>Course</th>
-                                              <th>Course Category</th>
-                                              <th>Subject</th>
-                                              <th>Status</th>
-                                              <th>Date</th>
-                                          </tr>
-                                      </thead>
-                                      <tbody>
-                                          <tr>
-                                              <td>32463</td>
-                                              <td>Meta Tags</td>
-                                              <td>Digital Marketing</td>
-                                              <td>Marketing</td>
-                                              <td>Facebook</td>
-                                              <td><span class="badge badge-success text-white">Active</span></td>
-                                              <td>2011/01/25</td>
-                                          </tr>
-                                          <tr>
-                                              <td>32463</td>
-                                              <td>Meta Tags</td>
-                                              <td>Digital Marketing</td>
-                                              <td>Marketing</td>
-                                              <td>Facebook</td>
-                                              <td><span class="badge badge-success text-white">Active</span></td>
-                                              <td>2011/01/25</td>
-                                          </tr>
-                                      </tbody>
-                                  </table>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-6">
-                      <div class="card">
-                          <div class="card-body">
-                              <div class="table-responsive">
-                                  <h3>Subjects</h3>
-                                  <table class="table table-striped table-bordered">
-                                      <thead>
-                                          <tr>
-                                              <th>#iD</th>
-                                              <th>Name</th>
                                               <th>Category</th>
                                               <th>Course</th>
-                                              <th>Status</th>
+                                              <th>Subject</th>
                                               <th>Date</th>
+                                              <th>Time</th>
+                                              <th>Status</th>
                                           </tr>
                                       </thead>
                                       <tbody>
                                           <tr>
                                               <td>32463</td>
-                                              <td>Lead Generation</td>
-                                              <td>Facebook Marketing</td>
+                                              <td>John Doe</td>
+                                              <td>Marketing</td>
                                               <td>Digital Marketing</td>
-                                              <td><span class="badge badge-success text-white">Active</span></td>
                                               <td>2011/01/25</td>
-                                          </tr>
-                                          <tr>
-                                              <td>32463</td>
-                                              <td>Lead Generation</td>
-                                              <td>Facebook Marketing</td>
-                                              <td>Digital Marketing</td>
-                                              <td><span class="badge badge-success text-white">Active</span></td>
-                                              <td>2011/01/25</td>
+                                              <td>2:00 AM</td>
+                                              <td><span class="badge badge-warning text-white">Active</span></td>
                                           </tr>
                                       </tbody>
                                   </table>
@@ -231,7 +181,41 @@
                           </div>
                       </div>
                   </div>
-                  <div class="col-6">
+                  <div class="col-12">
+                      <div class="card">
+                          <div class="card-body">
+                              <div class="table-responsive">
+                                  <h3>Assigned Course</h3>
+                                  <table class="table table-striped table-bordered">
+                                      <thead>
+                                          <tr>
+                                              <th>#iD</th>
+                                              <th>Teacher Name</th>
+                                              <th>Category</th>
+                                              <th>Course</th>
+                                              <th>Subject</th>
+                                              <th>Date</th>
+                                              <th>Time</th>
+                                         </tr>
+                                      </thead>
+                                      <tbody>
+                                          <tr>
+                                              <td>32463</td>
+                                              <td>John Doe</td>
+                                              <td>Marketing</td>
+                                              <td>Digital Marketing</td>
+                                              <td>Lead Generation</td>
+                                              <td>2011/01/25</td>
+                                              <td>2:00 AM</td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col-12">
                       <div class="card">
                           <div class="card-body">
                               <div class="table-responsive">
@@ -240,29 +224,82 @@
                                       <thead>
                                           <tr>
                                               <th>#iD</th>
-                                              <th>Name</th>
-                                              <th>Email</th>
-                                              <th>Status</th>
+                                              <th>Course</th>
+                                              <th>Subject</th>
+                                              <th>Lesson</th>
                                               <th>Date</th>
+                                              <th>Status</th>
                                           </tr>
                                       </thead>
                                       <tbody>
                                           <tr>
                                               <td>32463</td>
-                                              <td>Donna Snider</td>
-                                              <td>example@gmail.com</td>
-                                              <td><span class="badge badge-success text-white">Active</span></td>
+                                              <td>Digital Marketing</td>
+                                              <td>Lead Generation</td>
+                                              <td>Facebook Lead</td>
                                               <td>2011/01/25</td>
+                                              <td><span class="badge badge-warning text-white">Active</span></td>
                                           </tr>
                                           <tr>
                                               <td>32463</td>
-                                              <td>Donna Snider</td>
-                                              <td>example@gmail.com</td>
-                                              <td><span class="badge badge-success text-white">Active</span></td>
+                                              <td>Digital Marketing</td>
+                                              <td>Lead Generation</td>
+                                              <td>Facebook Lead</td>
                                               <td>2011/01/25</td>
+                                              <td><span class="badge badge-warning text-white">Active</span></td>
                                           </tr>
                                       </tbody>
                                   </table>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-12">
+                      <div class="card">
+                          <div class="card-body">
+                              <div class="table-responsive">
+                                  <h3>Sessions</h3>
+                                  <div class="table-responsive">
+                                      <table class="table table-striped table-bordered">
+                                          <thead>
+                                              <tr>
+                                                  <th>#ID</th>
+                                                  <th>Course</th>
+                                                  <th>Subject</th>
+                                                  <th>Assigned Lesson</th>
+                                                  <th>Students</th>
+                                                  <th>Status</th>
+                                                  <th>Date</th>
+                                                  <th>Time</th>
+
+                                              </tr>
+                                          </thead>
+                                          <tbody>
+                                              <tr>
+                                                  <td>32463</td>
+                                                  <td>Digital Marketing</td>
+                                                  <td>Lead Generation</td>
+                                                  <td>Yes</td>
+                                                  <td>20</td>
+                                                  <td><span class="badge badge-success text-white">Completed</span></td>
+                                                  <td>2011/01/25</td>
+                                                  <td>10:00 AM</td>
+
+                                              </tr>
+                                              <tr>
+                                                  <td>32463</td>
+                                                  <td>Digital Marketing</td>
+                                                  <td>Lead Generation</td>
+                                                  <td>No</td>
+                                                  <td>20</td>
+                                                  <td><span class="badge badge-danger text-white">Incompleted</span></td>
+                                                  <td>2011/01/25</td>
+                                                  <td>10:00 AM</td>
+
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </div>
                               </div>
                           </div>
                       </div>

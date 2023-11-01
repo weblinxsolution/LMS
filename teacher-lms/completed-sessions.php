@@ -80,6 +80,7 @@
                                                   <th>Students</th>
                                                   <th>Status</th>
                                                   <th>Date</th>
+                                                  <th>Time</th>
                                                   <th>Action</th>
                                               </tr>
                                           </thead>
@@ -92,6 +93,7 @@
                                                   <td>20</td>
                                                   <td><span class="badge badge-success text-white">Completed</span></td>
                                                   <td>2011/01/25</td>
+                                                  <td>10:00 AM</td>
                                                   <td>
                                                           <a href="session-completed-details.php" class="btn btn-info btn-sm text-white">Details</a>
                                                   </td>
@@ -104,6 +106,7 @@
                                                   <td>20</td>
                                                   <td><span class="badge badge-success text-white">Completed</span></td>
                                                   <td>2011/01/25</td>
+                                                  <td>10:00 AM</td>
                                                   <td>
                                                       <a href="session-completed-details.php" class="btn btn-info btn-sm text-white">Details</a>
                                                   </td>

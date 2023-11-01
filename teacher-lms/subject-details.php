@@ -191,6 +191,55 @@
                           </div>
                       </div>
                   </div>
+                  <div class="col-12">
+                      <div class="card">
+                          <div class="card-body">
+                              <div class="table-responsive">
+                                  <h3>Sessions</h3>
+                                  <div class="table-responsive">
+                                      <table class="table table-striped table-bordered zero-configuration">
+                                          <thead>
+                                              <tr>
+                                                  <th>#ID</th>
+                                                  <th>Session</th>
+                                                  <th>Course</th>
+                                                  <th>Subject</th>
+                                                  <th>Lesson Assigned</th>
+                                                  <!-- <th>Students</th> -->
+                                                  <!-- <th>Review</th> -->
+                                                  <th>Status</th>
+                                                  <th>Time</th>
+                                                  <th>Date</th>
+                                              </tr>
+                                          </thead>
+                                          <tbody>
+                                              <tr>
+                                                  <td>32463</td>
+                                                  <td>1</td>
+                                                  <td>Digital Marketing</td>
+                                                  <td>Lead Generation</td>
+                                                  <td>Yes</td>
+                                                  <td><span class="badge badge-success text-white"> Completed</span></td>
+                                                  <td>7:42 Am</td>
+                                                  <td>2011/01/25</td>
+                                              </tr>
+                                              <tr>
+                                                  <td>32463</td>
+                                                  <td>2</td>
+                                                  <td>Digital Marketing</td>
+                                                  <td>Lead Generation</td>
+                                                  <td>No</td>
+                                                  <td><span class="badge badge-danger  text-white">Incompleted</span></td>
+                                                  <td>7:42 Am</td>
+                                                  <td>2011/01/25</td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
               </div>
           </div>
           <!-- #/ container -->
